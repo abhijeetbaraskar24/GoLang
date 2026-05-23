@@ -45,37 +45,40 @@ func main() {
 			fmt.Println("enter number : ")
 			fmt.Scan(&x)
 			square(x)
-		} else if choice == 6{
+		} else{
 			fmt.Println("Program End ...")
 			break 
-		}else{
-			fmt.Println("Invalid choice")
 		}
-
 	}
 	
 }
 
-func add(a int, b int) int {
-	return a + b
+func add(a int, b int){
+	result := a + b
+	fmt.Println("Addition = ",result)
 }
 
-func sub(a int, b int) int {
-	return a - b
+func sub(a int, b int){
+	result := a - b
+	fmt.Println("Subtraction = ",result)
 }
 
-func mult(a int, b int) int {
-	return a * b
+func mult(a int, b int){
+	result := a * b
+	fmt.Println("Multiplication = ",result)
 }
 
-func div(a int, b int) int {
+func div(a int, b int ){
 	if b == 0 {
 		fmt.Println("Cannot divide by zero")
-		return 0
+		return
 	}
-	return a / b
+
+	result := a / b
+	fmt.Println("Division = ",result)
 }
 
-func square(a int) int {
-	return a * a
+func square(a int){
+	result := a * a
+	fmt.Println("Square = ",result)
 }
